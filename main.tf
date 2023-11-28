@@ -3,7 +3,7 @@ resource "aws_vpc" "dev_vpc" {
   enable_dns_hostnames = true
   enable_dns_support = true
 
-  tags {
+  tags = {
     name = "dev"
   }
 }
